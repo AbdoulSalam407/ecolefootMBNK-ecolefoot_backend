@@ -1,4 +1,21 @@
+[tool.poetry]
+name = "ecolefoot-backend"
+version = "0.1.0"
+description = "Backend Django pour l'école de foot Mbaye Ndoye"
+authors = ["Abdoul Salam Diallo <abdoulsalam142@gmail.com>"]
+
 [tool.poetry.dependencies]
 python = "^3.10"
-django = "^4.2"
-gunicorn = "^21.2.0"
+Django = "5.2.4"
+djangorestframework = "3.16.0"
+django-cors-headers = "4.7.0"
+gunicorn = "23.0.0"
+pillow = "11.3.0"
+sqlparse = "0.5.3"
+asgiref = "3.9.1"
+packaging = "25.0"
+tzdata = "2025.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
