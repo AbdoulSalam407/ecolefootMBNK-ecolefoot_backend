@@ -1,0 +1,73 @@
+/* Fond général et typographie */
+body, .dashboard, .module {
+  background-color: #002B5B;
+  color: #FFFFFF;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Titre principal */
+#site-name a {
+  color: #FFD700;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Barre d’en-tête */
+#header {
+  background-color: #001F3F;
+  border-bottom: 3px solid #FFD700;
+}
+
+/* Liens généraux */
+a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFFACD;
+  text-decoration: underline;
+}
+
+/* Navigation retour */
+.nav-global {
+  background-color: #003366;
+  padding: 10px;
+  text-align: right;
+}
+
+.nav-global a {
+  color: #FFD700;
+  font-weight: bold;
+}
+
+/* Modules et titres */
+.module h2 {
+  color: #FFD700;
+  border-bottom: 1px solid #FFD700;
+}
+
+/* Boutons */
+.button, .submit-row input {
+  background-color: #FFD700;
+  color: #002B5B;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover, .submit-row input:hover {
+  background-color: #FFFACD;
+  color: #002B5B;
+}
+
+/* Effet d’entrée pour modules */
+.module {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

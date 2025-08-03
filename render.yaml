@@ -1,0 +1,15 @@
+# render.yaml
+services:
+  - type: web
+    name: ecolefoot-backend
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn ecolefoot_backend.wsgi:application"
+    plan: free
+    envVars:
+      - key: DEBUG
+        value: "False"
+      - key: SECRET_KEY
+        value: "django-insecure-if(n7&(p2o&ts$tx*x(8%fk+j!e4^d@8ri#$#cxy@gi*sna@d%"  # à changer pour un vrai secret en prod
+      - key: ALLOWED_HOSTS
+        value: "*"
